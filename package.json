@@ -23,6 +23,7 @@
     "moment-timezone": "^0.5.39",
     "mongoose": "^5.12.13",
     "nodemailer": "^6.9.1",
+    "react-time-picker": "^6.6.0",
     "uuid": "^9.0.0",
     "validator": "^13.7.0"
   }

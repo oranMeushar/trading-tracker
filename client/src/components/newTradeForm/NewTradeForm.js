@@ -6,6 +6,7 @@ import { useAddTradeHook } from '../../hooks/useTradesHooks'
 import moment from 'moment-timezone';
 import 'react-date-picker/dist/DatePicker.css';
 import 'react-calendar/dist/Calendar.css';
+import TimePicker from 'react-time-picker';
 
 const NewTradeForm = () => {
     const [date, setDate] = useState(moment().toDate());
@@ -56,6 +57,8 @@ const NewTradeForm = () => {
         }
     }
 
+    console.log(timeEntry);
+
     return (
         <Container>
             <Header>Add New Trade</Header>
@@ -77,11 +80,11 @@ const NewTradeForm = () => {
             </Label>
             <Label>
                 <p>Time Entery:</p>
-                <input type='time' onChange={(e) => setTimeEntry(e.target.value)} value={timeEntry}/>
+                <TimePicker value={timeEntry} onChange={(time) => setTimeEntry(time)} format="HH:mm" maxTime='23:59' minTime='00:00'/>
             </Label>
             <Label>
                 <p>Time Exit:</p>
-                <input type='time' onChange={(e) => setTimeExit(e.target.value)} value={timeExit}/>
+                <TimePicker value={timeExit} onChange={(time) => setTimeExit(time)} format="HH:mm" maxTime='23:59' minTime='00:00'/>
             </Label>
             <Label>
                 <p>Profit/Loss:</p>
