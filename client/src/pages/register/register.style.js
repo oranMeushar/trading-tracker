@@ -1,13 +1,17 @@
 import styled from '@emotion/styled';
-
+import stockImg from '../../resources/images/stockimg.jpg';
 
 export const LoginContainer = styled.div`
     min-height:100vh;
     display: grid;
     place-items: center;
+    background: url(${stockImg}) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    
 `;
 export const Form = styled.div`
-    border-top:0.6rem solid #2EB475;
+    border-top:0.6rem solid #4c5f62;
     background-color: white;
     padding:3vmin 3vmin;
     border-radius: 0.6rem;
@@ -67,7 +71,7 @@ export const Label = styled.label`
 `;
 
 export const Button= styled.button`
-    background: #2EB475;
+    background: #4c5f62;
     outline:none;
     cursor: pointer;
     border:none;
@@ -88,7 +92,7 @@ export const FormFooter = styled.div`
     align-self: center;
     margin-top:2vmin;
     & span{
-        color: #2EB475;
+        color: blue;
         cursor: pointer;
 
     }
