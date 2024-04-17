@@ -1,0 +1,30 @@
+{
+  "name": "trading-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"nodemon index.js\" \"cd client && npm run start\"",
+    "start-debug": "concurrently \"npm run server-debug\" \"cd client && npm run start\"",
+    "server-debug": "nodemon index.js --inspect"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment-timezone": "^0.5.39",
+    "mongoose": "^5.12.13",
+    "nodemailer": "^6.9.1",
+    "react-time-picker": "^6.6.0",
+    "uuid": "^9.0.0",
+    "validator": "^13.7.0"
+  }
+}

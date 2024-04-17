@@ -1,0 +1,21 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background-color:#f3f2ef
+  /* background-color: #F2F2F2; */
+  /* background-image: linear-gradient(to bottom, #172b5e, #172a5d, #172a5c, #16295c, #16295b, #16285a, #152758, #152657, #142555, #132453, #122352, #112250); */
+}
+
+html{
+  font-size: 62.5%;
+  font-family: Roboto; 
+}
