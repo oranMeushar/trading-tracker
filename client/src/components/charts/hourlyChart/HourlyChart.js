@@ -74,7 +74,7 @@ const HourlyChart = ({title, data, width, height}) => {
         yAxis: [
             {
                 title: {
-                    text:    '<span style="font-family: Roboto;">' + 'Success/Failure' +'</span>',
+                    text:    '<span style="font-family: Roboto;">' + 'Profit/Loss' +'</span>',
                     margin:30,
                     style: {
                         fontWeight: 'bold',
