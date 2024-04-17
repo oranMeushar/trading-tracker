@@ -13,7 +13,7 @@ import { useDispatch } from 'react-redux';
 import { setLogin } from './store/services/usersReducer';
 import PrivateRoute from './hocs/privateRoute/privateRoute';
 import TradeDetails from './pages/tradeDetails/TradeDetails';
-//comment
+
 const App =  () => {
 
   const dispatch = useDispatch();
